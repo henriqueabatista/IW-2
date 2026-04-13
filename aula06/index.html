@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Atividade:</h1>
+    <h2>Introdução ao DOM (JavaScript)</h2>
+    <h4>Objetivo: Compreender o que é o DOM e como o JavaScript interage com elementos HTML.</h4>
+
+    <h2>Pesquisa</h2>
+    <div>
+        <p class="titulo">1. O que é DOM? Explique com suas palavras e a relação com HTML. </p>
+        <p class="resposta">O DOM (Document Object Model) é uma interface de programação que representa o HTML de uma
+            página web como uma árvore de objetos, permitindo que o JavaScript acesse, altere, adicione ou remova
+            elementos, estilos e conteúdo de forma dinâmica. Ele transforma o código estrutural em uma estrutura
+            hierárquica (nós) manipulável pelo navegador.</p>
+    </div>
+    <div>
+        <p class="titulo">2. O que é um nó (node)? Explique elementos, atributos e textos. </p>
+        <p class="resposta">No "mapa" do DOM, tudo é um nó. É a unidade básica da árvore. Pense neles como categorias
+            diferentes de peças:
+            <li class="liresposta">- Elementos (Element Node): São as tags HTML propriamente ditas (div, h1, p). São os
+                ramos principais da árvore.</li>
+            <li class="liresposta">- Atributos (Attribute Node): São as informações extras dentro da tag, como o src de
+                uma imagem ou a class de um botão.</li>
+            <li class="liresposta">- Textos (Text Node): É o conteúdo escrito que fica dentro das tags. Sim, o texto
+                "Olá Mundo" é considerado um nó filho da tag onde ele está.</li>
+        </p>
+    </div>
+    <div>
+        <p class="titulo">3. Explique os métodos: getElementById(), querySelector(), querySelectorAll(). </p>
+        <p class="resposta">Para mexer no DOM, primeiro você precisa "agarrar" o elemento. Os métodos mais comuns são:
+            <li class="liresposta">- getElementById('id'): É o mais rápido e direto. Ele busca o elemento pelo ID único.
+                Como IDs não se repetem, ele retorna apenas um elemento.</li>
+            <li class="liresposta">- querySelector('.classe' ou '#id'): É o canivete suíço. Ele usa a mesma sintaxe do
+                CSS. Ele retorna o primeiro elemento que encontrar que corresponda ao que você pediu.</li>
+            <li class="liresposta">- querySelectorAll('.classe'): Diferente do anterior, ele busca todos os elementos
+                que batem com a descrição e te entrega uma lista (NodeList) para você percorrer.</li>
+        </p>
+    </div>
+    <div>
+        <p class="titulo">4. Diferença entre innerHTML e innerText.</p>
+        <p class="resposta">A principal diferença é que o innerHTML processa e renderiza tags HTML, permitindo alterar a
+            estrutura do DOM, enquanto o innerText manipula apenas texto, exibindo tags como texto puro. O innerHTML
+            retorna o conteúdo com formatação, já o innerText retorna apenas o texto visível e ciente do CSS.</p>
+    </div>
+    <div>
+        <p class="titulo">5. O que são eventos? Exemplos: onclick, onchange, onmouseover.</p>
+        <p class="resposta">Eventos são ações ou ocorrências detectadas pelo JavaScript que acontecem nos elementos de
+            uma página web, geralmente disparados por interações do usuário (clique, teclado, movimento do mouse) ou
+            pelo navegador (carregamento da página). Eles permitem tornar sites interativos, executando funções
+            específicas em resposta, como validação de formulários ou alterações visuais.</p>
+    </div>
+    <button type="button" onclick="irParaPagina1()">Exercicio 1</button>
+    <button type="button" onclick="irParaPagina2()">Exercicio 2</button>
+    
+</body>
+
+</html>
